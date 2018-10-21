@@ -1,0 +1,58 @@
+#status-container, #container, #waiting-container, #finished-container {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 10%;
+    position: static;
+}
+
+#waiting-container {
+    float: left;
+    width: 42%;
+    margin: -2.5em 0.5em  2.5em 0.5em;
+    min-height: 78vh;
+}
+
+#status-container {
+    float: right;
+    width: 50%;
+    margin-top: -2.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    min-height: 35vh
+}
+
+#finished-container {
+    float: right;
+    width: 50%;
+    margin-top: 2.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding-top: 15px;
+    min-height: 35vh;
+}
+
+
+#container {
+    background: rgba(255, 255, 255, 0.975);
+    padding: 80px 30px;
+    padding-left: 30px;
+    min-height: 90vh;
+    margin-top: 30px;
+}
+
+#finished-users-list {
+    display: table;
+    margin: 0 auto;
+}
+
+#finished-users-list li {
+    margin-left: 10px;
+    display: inline-block;
+    padding-left: 10px;
+}

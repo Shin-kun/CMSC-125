@@ -1,0 +1,14 @@
+{
+  "name": "cmsc125",
+  "version": "1.0.0",
+  "description": "This is cmsc 125 npm directory",
+  "main": "lab2/lab2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Loewe Alivio",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
