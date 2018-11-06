@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Job Scheduling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src='../node_modules/jquery/dist/jquery.js'></script>
+	<script src='../node_modules/jquery-csv/src/jquery.csv.js'></script>
+	<script src='../node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+</head>
+<body>
+	<div class='container'>
+		
+		<div class='container-sets' id='container-file-menu'>
+			<div class='menu'>
+				<button class='process' name='process1'>process1</button>
+				<button class='process' name='process2'>process2</button>
+			</div>
+		</div>
+	
+		<div class='container-sets' id='container-job-menu'>
+			<div class='menu menu-cont'>
+				<button class='job'>FCFS</button>
+				<button class='job'>Priority</button>						
+				<button class='job'>SJF</button>
+				<button class='job'>SRPT</button>
+				<button class='job'>Round Robin</button>
+			</div>
+		</div>
+	
+		<div class='container-sets' id='container-scheduling'>
+			<div class='row' id='scheduling'>
+				<div class='col-xs-6'>
+					<div class='panel-body'>
+						<div class='gantt-chart'>
+							<p class='create-p'>Gantt Chart</p>
+							<div id='graph'></div>
+						</div>	
+					</div>
+				</div>
+				<div class='col-xs-6'>
+					<div class='panel-body'>
+						<table class='table' id='scheduling-table'>
+							<tr>
+								<th>Process</th>
+								<th>Waiting Time</th>
+								<th>Turnaround Time</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='./graph.js'></script>
+	<script src='./fileReader.js'></script>
+	<script src='./job-scheduling/fcfs.js'></script>
+	<script src='./job-scheduling/priority.js'></script>
+	<script src='./job-scheduling/sjf.js'></script>
+	<script src='./job-scheduling/srpt.js'></script>
+	<script src='./job-scheduling/round-robin.js'></script>
+	<script src='./lab2.js'></script>
+
+</body>
+
+</html>
